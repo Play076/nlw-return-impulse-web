@@ -8,6 +8,6 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.listen(8585, () => {
+app.listen(process.env.PORT || 8585, () => {
     console.log("Server Online");
 });
